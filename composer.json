@@ -1,0 +1,16 @@
+{
+    "name": "bonnafous/pizza",
+    "description": "Pattern factory - livre Design Patterns Head First",
+    "authors": [
+        {
+            "name": "François Bonnafous",
+            "email": "francois.bonnafous@hotmail.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+        "App\\" : "src/"
+        }
+    },    
+    "require": {}
+}
