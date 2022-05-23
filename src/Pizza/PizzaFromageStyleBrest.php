@@ -9,6 +9,7 @@
             $this->pate = 'Pâte fine';
             $this->sauce = 'Sauce Marinara';
             $this->garnitures[] = "Parmigiano reggiano râpé";
+            $this->garnitures[] = "Roquefort";
         }
 
     }
