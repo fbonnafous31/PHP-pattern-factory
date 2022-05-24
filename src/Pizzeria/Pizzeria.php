@@ -1,12 +1,12 @@
 <?php
 
-    namespace App;
+    namespace Pizzeria;
 
     abstract class Pizzeria {
 
-        public Pizza $pizza;
+        public \Pizza\Pizza $pizza;
 
-        public function commanderPizza(string $type): Pizza {
+        public function commanderPizza(string $type): \Pizza\Pizza {
             $this->pizza = $this->creerPizza($type);
             $this->pizza->preparer();
             $this->pizza->cuire();

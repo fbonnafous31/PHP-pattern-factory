@@ -1,17 +1,17 @@
 <?php
 
-    namespace App;
+    namespace Pizzeria;
 
     class PizzeriaBrest extends Pizzeria {
-        public function creerPizza(string $type): Pizza {       
+        public function creerPizza(string $type): \Pizza\Pizza {       
             if ($type == "fromage") {
-                $pizza = new PizzaFromageStyleBrest();
+                $pizza = new \Pizza\PizzaFromageStyleBrest();
             } elseif ($type == "poivrons") {
-                $pizza = new PizzaPoivronsStyleBrest();
+                $pizza = new \Pizza\PizzaPoivronsStyleBrest();
             } elseif ($type == "fruitsDeMer") {
-                $pizza = new PizzaFruitsDeMerStyleBrest();                
+                $pizza = new \Pizza\PizzaFruitsDeMerStyleBrest();                
             } elseif ($type == "vegetarienne") {
-                $pizza = new PizzaVegetarienneStyleBrest();                
+                $pizza = new \Pizza\PizzaVegetarienneStyleBrest();                
             }
             return $pizza;
         }

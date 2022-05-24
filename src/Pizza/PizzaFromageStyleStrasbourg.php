@@ -1,8 +1,8 @@
 <?php
 
-    namespace App;
+    namespace Pizza;
 
-    class PizzaFromageStyleStrasbourg extends Pizza {
+    class PizzaFromageStyleStrasbourg extends \Pizza\Pizza {
         
         public function __construct() {
             $this->nom = 'Pizza sauce style Strasbourg et fromage';

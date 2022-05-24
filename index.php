@@ -1,13 +1,12 @@
 <?php
 
-    namespace App;
-    require_once('autoload.php');
+    require_once('libraries/autoload.php');
 
-    $boutiqueBrest = new PizzeriaBrest();
+    $boutiqueBrest = new \Pizzeria\PizzeriaBrest();
     $pizza  = $boutiqueBrest->commanderPizza('fromage');
     echo "Luc a commandé une ".$pizza->getNom()."<br><br>";
 
-    $boutiqueStrasbourg = new PizzeriaStrasbourg();
+    $boutiqueStrasbourg = new \Pizzeria\PizzeriaStrasbourg();
     $pizza  = $boutiqueStrasbourg->commanderPizza('fromage');
     echo "Michel a commandé une ".$pizza->getNom();
 

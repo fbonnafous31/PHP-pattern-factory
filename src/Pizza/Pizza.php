@@ -1,6 +1,6 @@
 <?php
 
-    namespace App;
+    namespace Pizza;
 
     abstract class Pizza {
         public string $nom;
